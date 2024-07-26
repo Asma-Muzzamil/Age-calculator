@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age calculator app</title>
+  <link rel="stylesheet" href="./assets/scss/main.css">
+  <script src="./assets/js/main.js"></script>
+</head>
+
+<body>
+  <div class="background">
+    <div class="main-box-age">
+      <div class="input-bars">
+        <div class="input-common input-error">
+          <label for="input1 " class="label">DAY</label>
+          <input type="text" class="from-input" id="input1" placeholder="DD">
+        </div>
+        <div class="input-common input-error" >
+          <label for="input1" class="label">MONTH</label>
+          <input type="text" class="from-input" id="input2" placeholder="MM">
+        </div>
+        <div class="input-common input-error">
+          <label for="input1" class="label">YEAR</label>
+          <input type="text" class="from-input" id="input3" placeholder="YYYY">
+
+        </div>
+      </div>
+      <div class="image-bar">
+        <div class="bar"></div>
+        <div class="image-div" id="image-div">
+          <figure>
+            <img class="image" src="./assets/images/icon-arrow.png" alt="not found">
+          </figure>
+        </div>
+      </div>
+
+      <div class="numbers-showing">
+        <div class="years-div">
+          <div class="dynamic-div">
+            <span class="number-bar " id="span-yr">- -</span>
+            <span class="number-in">years</span>
+          </div>
+          <div class="months-div">
+            <div class="dynamic-div">
+              <span class="number-bar " id="span-mn">- -</span>
+              <span class="number-in">months</span>
+            </div>
+          </div>
+          <div class="days-div">
+            <div class="dynamic-div">
+              <span class="number-bar " id="span-day">- -</span>
+              <span class="number-in">days</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>

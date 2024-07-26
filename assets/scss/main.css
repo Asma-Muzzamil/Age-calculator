@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Italic";
+  src: url("../fonts/Poppins-Italic.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url("../fonts/Poppins-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Poppins-ExtraBoldItalic";
+  src: url("../fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
+}
+.background {
+  background-color: hsl(0, 0%, 94%);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.background .main-box-age {
+  background-color: white;
+  width: 600px;
+  padding: 5% 2% 5% 5%;
+  box-shadow: 1px 1px 3px 0px rgba(128, 128, 128, 0.5);
+  border-top-left-radius: 33px;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 124px;
+  border-top-right-radius: 33px;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age {
+    width: 323px;
+  }
+}
+.background .main-box-age .input-bars {
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.background .main-box-age .input-bars .input-common {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5%;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .input-bars .input-common {
+    margin-right: 4%;
+  }
+}
+.background .main-box-age .input-bars .input-common .label {
+  letter-spacing: 2px;
+  font-family: "Poppins-Regular";
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 3%;
+  color: hsl(0, 1%, 44%);
+}
+.background .main-box-age .input-bars .input-common .from-input {
+  padding-left: 7%;
+  padding-top: 13.5%;
+  padding-bottom: 13.5%;
+  border-radius: 6px;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 86%);
+  max-width: 122px;
+  font-size: 24px;
+  color: black;
+  font-weight: 500;
+  margin-bottom: 4%;
+  font-family: "Poppins-Bold";
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .input-bars .input-common .from-input {
+    max-width: 98px;
+  }
+}
+.background .main-box-age .input-bars .input-common input::-moz-placeholder {
+  font-size: 24px;
+  font-family: "Poppins-Bold";
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  vertical-align: middle;
+}
+.background .main-box-age .input-bars .input-common input::placeholder {
+  font-size: 24px;
+  font-family: "Poppins-Bold";
+  color: hsl(0, 1%, 44%);
+  font-weight: 700;
+  vertical-align: middle;
+}
+.background .main-box-age .input-bars .error .label {
+  color: red;
+}
+.background .main-box-age .input-bars .error .from-input {
+  border-color: red;
+}
+.background .main-box-age .input-bars .error .error-text {
+  color: red;
+  font-size: 12px;
+  font-family: "Poppins-Italic";
+}
+.background .main-box-age .image-bar {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .image-bar {
+    justify-content: center;
+    height: 7em;
+  }
+}
+.background .main-box-age .image-bar .bar {
+  border-top: 2px solid hsl(0, 0%, 86%);
+  width: 80%;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .image-bar .bar {
+    width: 100%;
+  }
+}
+.background .main-box-age .image-bar .image-div {
+  background: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  height: 4.5em;
+  width: 4.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .image-bar .image-div {
+    position: absolute;
+    height: 3.5em;
+    width: 3.5em;
+  }
+}
+.background .main-box-age .image-bar .image-div:hover {
+  background-color: black;
+  transition: 0.3s all ease-in;
+  cursor: pointer;
+}
+.background .main-box-age .image-bar .image-div .image {
+  width: 90%;
+  vertical-align: middle;
+  height: auto;
+  max-width: 100%;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .image-bar .image-div .image {
+    width: 61%;
+  }
+}
+.background .main-box-age .numbers-showing .number-bar {
+  font-family: "Poppins-ExtraBoldItalic";
+  color: hsl(259, 100%, 65%);
+  font-size: 4rem;
+  margin-right: 1%;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .numbers-showing .number-bar {
+    font-size: 2rem;
+  }
+}
+.background .main-box-age .numbers-showing .number-in {
+  font-family: "Poppins-ExtraBoldItalic";
+  font-size: 4rem;
+}
+@media screen and (max-width: 445px) {
+  .background .main-box-age .numbers-showing .number-in {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=main.css.map */
